@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">104,776</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.Test.DDDTest</td><td><a href="#m0">validateInforamation</a></td><td rowspan="1">1693931137444</td><td rowspan="1">30309</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">com.Test.DDDTest</td><td><a href="#m1">validateInforamation</a></td><td rowspan="10">1693931201135</td><td rowspan="10">6382</td></tr><tr class="passedeven"><td><a href="#m2">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m3">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m4">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m5">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m6">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m7">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m8">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m9">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m10">validateInforamation</a></td></tr><tr class="passedeven"><td><a href="#m11">validateRegisterPage</a></td><td rowspan="1">1693931128873</td><td rowspan="1">7863</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>firstName</td><td>lastName</td><td>email</td><td>address</td><td>city</td><td>state</td><td>country</td><td>username</td><td>password</td><td>confirmPassword</td></tr><tr><th colspan="10">Exception</th></tr><tr><td colspan="10"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: country
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at com.Test.DDDTest.validateInforamation(DDDTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_6</td><td>Test_Lastname_6</td><td>679@gmail.com</td><td>Test_address_6</td><td>Test_city_6</td><td>Test_State_6</td><td>INDIA</td><td>Test_Username_6</td><td>Username@678</td><td>Username@678</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_8</td><td>Test_Lastname_8</td><td>901@gmail.com</td><td>Test_address_8</td><td>Test_city_8</td><td>Test_State_8</td><td>INDIA</td><td>Test_Username_8</td><td>Username@900</td><td>Username@900</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_10</td><td>Test_Lastname_10</td><td>112@gmail.com</td><td>Test_address_10</td><td>Test_city_10</td><td>Test_State_10</td><td>INDIA</td><td>Test_Username_10</td><td>Username@1122</td><td>Username@1122</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_1</td><td>Test_Lastname_1</td><td>123@gmail.com</td><td>Test_address_1</td><td>Test_city_1</td><td>Test_State_1</td><td>INDIA</td><td>Test_Username_1</td><td>Username@123</td><td>Username@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_3</td><td>Test_Lastname_3</td><td>345@gmail.com</td><td>Test_address_3</td><td>Test_city_3</td><td>Test_State_3</td><td>INDIA</td><td>Test_Username_3</td><td>Username@345</td><td>Username@345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_4</td><td>Test_Lastname_4</td><td>456@gmail.com</td><td>Test_address_4</td><td>Test_city_4</td><td>Test_State_4</td><td>INDIA</td><td>Test_Username_4</td><td>Username@456</td><td>Username@456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_9</td><td>Test_Lastname_9</td><td>101@gmail.com</td><td>Test_address_9</td><td>Test_city_9</td><td>Test_State_9</td><td>INDIA</td><td>Test_Username_9</td><td>Username@1011</td><td>Username@1011</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_7</td><td>Test_Lastname_7</td><td>790@gmail.com</td><td>Test_address_7</td><td>Test_city_7</td><td>Test_State_7</td><td>INDIA</td><td>Test_Username_7</td><td>Username@789</td><td>Username@789</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_2</td><td>Test_Lastname_2</td><td>234@gmail.com</td><td>Test_address_2</td><td>Test_city_2</td><td>Test_State_2</td><td>INDIA</td><td>Test_Username_2</td><td>Username@234</td><td>Username@234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.Test.DDDTest#validateInforamation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr><tr class="param stripe"><td>Test_Firstname_5</td><td>Test_Lastname_5</td><td>567@gmail.com</td><td>Test_address_5</td><td>Test_city_5</td><td>Test_State_5</td><td>INDIA</td><td>Test_Username_5</td><td>Username@567</td><td>Username@567</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.Test.DDDTest#validateRegisterPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-05T21:55:28 IST" name="Default suite" finished-at="2023-09-05T21:57:13 IST" duration-ms="104776">
+    <groups>
+    </groups>
+    <test started-at="2023-09-05T21:55:28 IST" name="Default test" finished-at="2023-09-05T21:57:13 IST" duration-ms="104776">
+      <class name="com.Test.DDDTest">
+        <test-method signature="validateRegisterPage()[pri:1, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:55:28 IST" name="validateRegisterPage" finished-at="2023-09-05T21:55:36 IST" duration-ms="7863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:55:37 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:56:07 IST" duration-ms="30309" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lastName]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[address]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[city]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[state]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[country]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[confirmPassword]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with text: country
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: country
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+at com.Test.DDDTest.validateInforamation(DDDTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:56:07 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:56:14 IST" duration-ms="6612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@123]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:56:14 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:56:20 IST" duration-ms="6592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[234@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@234]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:56:20 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:56:27 IST" duration-ms="6606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[345@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_3]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@345]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:56:27 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:56:33 IST" duration-ms="6358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[456@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@456]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:56:33 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:56:41 IST" duration-ms="7185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[567@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_5]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_5]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@567]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@567]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:56:41 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:56:47 IST" duration-ms="6382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[679@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_6]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_6]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_6]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@678]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:56:47 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:56:53 IST" duration-ms="6432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[790@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_7]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_7]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_7]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@789]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:56:53 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:57:00 IST" duration-ms="6737" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[901@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_8]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_8]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_8]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@900]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@900]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:57:00 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:57:07 IST" duration-ms="6491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[101@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_9]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_9]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_9]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@1011]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@1011]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+        <test-method signature="validateInforamation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Test.DDDTest@4562e04d]" started-at="2023-09-05T21:57:07 IST" name="validateInforamation" data-provider="TestData" finished-at="2023-09-05T21:57:13 IST" duration-ms="6406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test_Firstname_10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test_Lastname_10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[112@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test_address_10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test_city_10]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test_State_10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[INDIA]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test_Username_10]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Username@1122]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Username@1122]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInforamation -->
+      </class> <!-- com.Test.DDDTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
